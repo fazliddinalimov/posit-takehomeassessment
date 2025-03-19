@@ -14,3 +14,9 @@ USERNAME=your_username
 PASSWORD=your_password
 
 Note: Replace your_username and your_password with your actual credentials.
+
+
+
+Running Tests
+
+After installing the project and setting the environment variables, please run `npx playwright test`
