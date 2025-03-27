@@ -32,7 +32,7 @@ class LoginPage extends BasePage {
   }
 
   // Perform login with credentials
-  async login(username: string | undefined, password: string | undefined) {
+  async login(username = process.env.USERNAME, password = process.env.PASSWORD) {
     if (!username || !password) {
       throw new Error('Username or Password missing from env');
     }

@@ -10,6 +10,7 @@ class IdePage extends BasePage {
     }
 
 
+    // Wait for a project to deploy
     async waitForProjectToDeploy() {
         await this.page.getByText("Creating Project").waitFor({ state: 'visible', timeout: 30000 });
         await this.page.getByText("Creating Project").waitFor({ state: 'hidden', timeout: 30000 });
@@ -18,6 +19,7 @@ class IdePage extends BasePage {
         await (await this.getIframe()).locator(this.fileButton).waitFor({ state: 'attached', timeout: 100000 });
     }
 
+    // Get IDE iframe
     async getIframe() {
         return this.page.frameLocator(this.ideIframe);
     }
