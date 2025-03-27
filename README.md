@@ -1,5 +1,5 @@
 # Posit Cloud Playwright Test
-This repository contains an automated test Posit Cloud using Playwright, a framework for end-to-end testing of web applications.
+This repository contains an automated test for Posit Cloud using Playwright, a framework for end-to-end testing of web applications.
 
 ## Prerequisites
 
